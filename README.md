@@ -2,7 +2,7 @@
 
 Title: Tilt Escape
 
-Author: Shi Johnson-Bey
+Author: Shi Johnson-Bey (ishmaelj)
 
 Design Document: [Tilt Escape](https://github.com/ShiJbey/15666-Game0-TiltEscape)
 
