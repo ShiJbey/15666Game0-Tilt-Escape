@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- NOTE: the string 'TODO' appears everywhere you need to fill in information. -->
+<html>
+<head>
+<title>Tilt Escape</title>
+<!-- NOTE: this CSS sets up the ".figure" class to center images, and instructs images in ".figure"s to have space around them and to render crisp pixel edges when scaled [e.g. for retina displays]. -->
+<style>
+.figure {
+	text-align:center;
+}
+.figure > img {
+	margin: 0px 20px;
+	image-rendering: pixelated;
+}
+
+</style>
+</head>
+<body>
+<h1>Tilt Escape</h1>
+<p>Like <a href="https://en.wikipedia.org/wiki/Labyrinth_(marble_game)">Marble Labyrinth</a>
+,but players must tilt the stage to navigate while avoiding security guards.</p>
+<!-- the <div> wrapping this image centers it on the page. -->
+<!-- TODO: drawing showing the main view of the game during play -->
+<div class="figure">
+<img src="diagram_start.jpg" width="300" height="300"/>
+</div>
+
+<p>This game is played on an level like the one drawn above. Levels will contain:
+	a player, a goal, walls, and one or more security guards. The player will use
+	the arrow keys to tilt the level, causing the player to roll in the direction
+	of the tilt. If the player reaches the goal, then a they are dropped into a
+	new level. However if they get caught inside the guard's vision, then they
+	must resart the level from the beginning.
+</p>
+
+<h2>Gameplay</h2>
+<p><strong>Start:</strong> at the start of the level, the player is placed at a
+predetermined start position. Guards are also placed at predetermined start
+positions.</p>
+
+<p><strong>Movement:</strong> The player moves by tilting the level using the arrow
+keys. The level can tilt both left, right, up and down. Below, only a rightward tilt
+is drawn.</p>
+<div class="figure">
+	<img src="diagram_tilt.jpg" width="300" height="300"/>
+</div>
+
+<p><strong>Guards:</strong> Guards move in preset patterns around the level. They are
+unaffected by changes in level tilt. The cone in front of them represents their field
+of view. If the player intersects with this code, then they will have to restart from
+the level's starting point</p>
+
+<div class="figure">
+	<img src="diagram_caught.jpg" width="300" height="300"/>
+</div>
+
+<p><strong>Finish:</strong> When the player reaches the goal door, the level is complete
+and they will be placed on the next level.</p>
+<!-- TODO: illustrate your descriptions with more drawings -->
+<div class="figure">
+	<img src="diagram_end.jpg" width="300" height="300"/>
+</div>
+
+<h2>Assets</h2>
+<div class="figure">
+	<img src="assets.PNG" width="400" height="300"/>
+</div>
+<p>Meshes are provided in the <a href="https://github.com/ShiJbey/15666-Game0-TiltEscape/blob/master/TiltEscapeAssets.blend">TiltEscapeAssets.blend</a> file</p>
+
+</body>
+</html>
